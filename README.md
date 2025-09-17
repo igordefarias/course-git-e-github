@@ -10,3 +10,5 @@ Estou usando o Codespaces. Pelo terminal aprendi a verificar quais arquivos fora
 Antes de "commitar" é preciso dizer ao Git para salvar as mudanças. Faz-se isto sempre, com o comando "git add nome-do-arquivo". Por exemplo: git add README.md
 
 A seguir irei "commitar", i.e mandar o Git criar uma "fotografia" das minhas alterações. Como ele faz isso? Lembre-se: "commit" diz ao Git para salvar as alterações no servidor local (minha máquina, no caso o Codespace), criando assim um histórico.
+
+O próximo passo é sincronizar o meu histórico local de alterações com o repositório remoto, ou seja, o GitHub. Isto se faz com o comando "git push".
