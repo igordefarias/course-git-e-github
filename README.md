@@ -12,3 +12,5 @@ Antes de "commitar" é preciso dizer ao Git para salvar as mudanças. Faz-se ist
 A seguir irei "commitar", i.e mandar o Git criar uma "fotografia" das minhas alterações. Como ele faz isso? Lembre-se: "commit" diz ao Git para salvar as alterações no servidor local (minha máquina, no caso o Codespace), criando assim um histórico.
 
 O próximo passo é sincronizar o meu histórico local de alterações com o repositório remoto, ou seja, o GitHub. Isto se faz com o comando "git push".
+
+Essa linha eu adicionei pelo editor de texto do próprio GitHub. Isso é considerado pelo Git uma alteração feita no servidor remoto. Darei o "commit" e provavelmente ao entrar no terminal e escrever "git status" haverá uma mensagem para que se faça um pull, isto é puxar a modificação do "remoto" (GitHub) para o "local" (Git). Pelo que entendi, isto é muito útil e usado quando outra pessoa (ou eu mesmo, em outro lugar) altera o código. Portanto, é hora de atualizar o Codespaces para buscar e aplicar as mudanças que estão no repositório remoto, com o comando git pull.
