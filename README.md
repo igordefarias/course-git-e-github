@@ -41,3 +41,5 @@ git fetch: Apenas baixa as novidades. É seguro, não modifica meu trabalho.
 
 git pull: Baixa as novidades <strong>E</strong> tenta misturá-las com seu trabalho atual. É a combinação de git fetch + git merge.
 
+Teste: escrevi essa linha no remoto para testar o fetch no Vs Code.
+
