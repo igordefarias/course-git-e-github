@@ -22,3 +22,22 @@ Para facilitar, aprendi um atalho para agializar o commit e o push. Faça a muda
 Ao invés de adicionar os arquivos um por um, use um atalho para adicionar todas as mudanças atuais; novos arquivos e modificações com o ponto "." Ex: git add .
 
 O "." significa "tudo neste diretório e subdiretórios".
+
+Começar o dia sincronizando meu ambiente local com o que aconteceu no repositório remoto evita muitos problemas. Para isso, no meu terminal, dentro do repositório (pasta) do projeto, simplesmente digite: git fetch
+
+<strong>O que exatamente git fetch faz?</strong>
+
+Imagine que o repositório remoto (no GitHub) e o meu repositório local (no Codespaces) são duas árvores de galhos (branches).
+
+O git fetch vai até o repositório remoto, "olha" para todos os galhos e baixa todas as novidades que ele ainda não tem.
+
+Crucial: Ele NÃO mistura (não faz o merge) essas novidades no meu galho de trabalho atual. Ele apenas atualiza a sua "cópia informativa" do que está acontecendo remotamente.
+
+Isso é útil porque permite que eu veja o que os outros fizeram (git status ou git log origin/main) antes de decidir integrar essas mudanças ao meu trabalho com um git pull ou git merge.
+
+<strong>A diferença chave que meu precisa saber:</strong>
+
+git fetch: Apenas baixa as novidades. É seguro, não modifica meu trabalho.
+
+git pull: Baixa as novidades <strong>E</strong> tenta misturá-las com seu trabalho atual. É a combinação de git fetch + git merge.
+
